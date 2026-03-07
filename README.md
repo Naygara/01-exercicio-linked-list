@@ -68,7 +68,21 @@ O projeto já está configurado com os arquivos `.vscode/tasks.json` e `.vscode/
     - `step` (ou `s`): Entra em uma função.
     - `print <variavel>` (ou `p`): Exibe o valor de uma variável.
     - `continue` (ou `c`): Continua a execução até o próximo breakpoint.
+    - `info breakpoints`: Lista todos os breakpoints.
     - `quit` (ou `q`): Sai do GDB.
+
+4. **Fluxo de Exemplo**:
+
+    ```
+    (gdb) info breakpoints
+    (gdb) break main
+    (gdb) break criaLista()
+    (gdb) run
+    (gdb) next
+    (gdb) next
+    (gdb) print lista
+    (gdb) quit
+    ```
 
 ## Fluxo de Testes
 
